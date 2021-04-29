@@ -1,0 +1,42 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: daily
+    time: "12:01"
+    timezone: America/Los_Angeles
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: "@babel/node"
+    versions:
+    - 7.12.10
+    - 7.12.17
+    - 7.13.10
+    - 7.13.12
+  - dependency-name: mocha
+    versions:
+    - 8.2.1
+    - 8.3.0
+  - dependency-name: "@babel/plugin-transform-modules-commonjs"
+    versions:
+    - 7.12.1
+    - 7.12.13
+  - dependency-name: webpack-dev-server
+    versions:
+    - 3.11.1
+  - dependency-name: urijs
+    versions:
+    - 1.19.5
+  - dependency-name: lodash-es
+    versions:
+    - 4.17.20
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
+  - dependency-name: jquery
+    versions:
+    - 3.5.1
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
